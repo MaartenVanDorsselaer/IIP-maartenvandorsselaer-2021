@@ -1,0 +1,14 @@
+D:\IIP\IIP-maartenvandorsselaer-2021\SlnLes01\WpfHelloWorld\bin\Debug\WpfHelloWorld.exe.config
+D:\IIP\IIP-maartenvandorsselaer-2021\SlnLes01\WpfHelloWorld\bin\Debug\WpfHelloWorld.exe
+D:\IIP\IIP-maartenvandorsselaer-2021\SlnLes01\WpfHelloWorld\bin\Debug\WpfHelloWorld.pdb
+D:\IIP\IIP-maartenvandorsselaer-2021\SlnLes01\WpfHelloWorld\obj\Debug\MainWindow.g.cs
+D:\IIP\IIP-maartenvandorsselaer-2021\SlnLes01\WpfHelloWorld\obj\Debug\App.g.cs
+D:\IIP\IIP-maartenvandorsselaer-2021\SlnLes01\WpfHelloWorld\obj\Debug\WpfHelloWorld_MarkupCompile.cache
+D:\IIP\IIP-maartenvandorsselaer-2021\SlnLes01\WpfHelloWorld\obj\Debug\WpfHelloWorld_MarkupCompile.lref
+D:\IIP\IIP-maartenvandorsselaer-2021\SlnLes01\WpfHelloWorld\obj\Debug\MainWindow.baml
+D:\IIP\IIP-maartenvandorsselaer-2021\SlnLes01\WpfHelloWorld\obj\Debug\WpfHelloWorld.g.resources
+D:\IIP\IIP-maartenvandorsselaer-2021\SlnLes01\WpfHelloWorld\obj\Debug\WpfHelloWorld.Properties.Resources.resources
+D:\IIP\IIP-maartenvandorsselaer-2021\SlnLes01\WpfHelloWorld\obj\Debug\WpfHelloWorld.csproj.GenerateResource.cache
+D:\IIP\IIP-maartenvandorsselaer-2021\SlnLes01\WpfHelloWorld\obj\Debug\WpfHelloWorld.csproj.CoreCompileInputs.cache
+D:\IIP\IIP-maartenvandorsselaer-2021\SlnLes01\WpfHelloWorld\obj\Debug\WpfHelloWorld.exe
+D:\IIP\IIP-maartenvandorsselaer-2021\SlnLes01\WpfHelloWorld\obj\Debug\WpfHelloWorld.pdb

@@ -1,0 +1,7 @@
+D:\IIP\IIP-maartenvandorsselaer-2021\SlnLes01\ConsoleHelloWorld\obj\Debug\ConsoleHelloWorld.csprojAssemblyReference.cache
+D:\IIP\IIP-maartenvandorsselaer-2021\SlnLes01\ConsoleHelloWorld\obj\Debug\ConsoleHelloWorld.csproj.CoreCompileInputs.cache
+D:\IIP\IIP-maartenvandorsselaer-2021\SlnLes01\ConsoleHelloWorld\bin\Debug\ConsoleHelloWorld.exe.config
+D:\IIP\IIP-maartenvandorsselaer-2021\SlnLes01\ConsoleHelloWorld\bin\Debug\ConsoleHelloWorld.exe
+D:\IIP\IIP-maartenvandorsselaer-2021\SlnLes01\ConsoleHelloWorld\bin\Debug\ConsoleHelloWorld.pdb
+D:\IIP\IIP-maartenvandorsselaer-2021\SlnLes01\ConsoleHelloWorld\obj\Debug\ConsoleHelloWorld.exe
+D:\IIP\IIP-maartenvandorsselaer-2021\SlnLes01\ConsoleHelloWorld\obj\Debug\ConsoleHelloWorld.pdb
