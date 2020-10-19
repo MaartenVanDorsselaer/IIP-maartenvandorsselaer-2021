@@ -5,9 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfHelloWorld"
         mc:Ignorable="d"
-        Title="MainWindow" Height="173.702" Width="559.255">
-    <Grid>
-        <Label Content="Hello World" HorizontalAlignment="Left" Margin="86,63,0,0" VerticalAlignment="Top" Width="384" Height="45" FontSize="16"/>
-
+        Title="MainWindow" Height="188.597" Width="507.495">
+    <Grid Margin="0,0,3.8,1.8" RenderTransformOrigin="0.492,0.311">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="271*"/>
+            <ColumnDefinition Width="226*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="lblMyLabel" Content="Hallo, iedereen!" HorizontalAlignment="Left" Height="24" Margin="10,10,0,0" VerticalAlignment="Top" Width="103"/>
+        <Button Content="Klik hier!" HorizontalAlignment="Left" Height="23" Margin="10,80,0,0" VerticalAlignment="Top" Width="51" Click="Button_Click_1"/>
+        <TextBox x:Name="txtNaam" HorizontalAlignment="Left" Height="23" Margin="10,39,0,0" TextWrapping="Wrap" Text="Sam" VerticalAlignment="Top" Width="71"/>
     </Grid>
 </Window>

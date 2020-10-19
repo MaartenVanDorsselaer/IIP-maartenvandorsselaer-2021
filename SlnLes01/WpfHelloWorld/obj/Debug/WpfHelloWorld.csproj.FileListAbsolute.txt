@@ -12,3 +12,4 @@ D:\IIP\IIP-maartenvandorsselaer-2021\SlnLes01\WpfHelloWorld\obj\Debug\WpfHelloWo
 D:\IIP\IIP-maartenvandorsselaer-2021\SlnLes01\WpfHelloWorld\obj\Debug\WpfHelloWorld.csproj.CoreCompileInputs.cache
 D:\IIP\IIP-maartenvandorsselaer-2021\SlnLes01\WpfHelloWorld\obj\Debug\WpfHelloWorld.exe
 D:\IIP\IIP-maartenvandorsselaer-2021\SlnLes01\WpfHelloWorld\obj\Debug\WpfHelloWorld.pdb
+D:\IIP\IIP-maartenvandorsselaer-2021\SlnLes01\WpfHelloWorld\obj\Debug\WpfHelloWorld.csprojAssemblyReference.cache
