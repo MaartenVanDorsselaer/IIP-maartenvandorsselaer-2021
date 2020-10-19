@@ -25,9 +25,16 @@ namespace WpfHelloWorld
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void btnConfirm_Click(object sender, RoutedEventArgs e)
         {
-            lblMyLabel.Content = "Hallo, " + txtNaam.Text;
+            lblNaam.Content = "Hallo " + txtNaam.Text;
+            txtNaam.Text = "";
+        }
+
+        private void btnHerstel_Click(object sender, RoutedEventArgs e)
+        {
+            lblNaam.Content = "Hallo, hoe is je naam? ";
+            txtNaam.Text = "";
         }
     }
 }

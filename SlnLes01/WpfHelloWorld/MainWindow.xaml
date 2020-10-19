@@ -5,14 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfHelloWorld"
         mc:Ignorable="d"
-        Title="MainWindow" Height="188.597" Width="507.495">
-    <Grid Margin="0,0,3.8,1.8" RenderTransformOrigin="0.492,0.311">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="271*"/>
-            <ColumnDefinition Width="226*"/>
-        </Grid.ColumnDefinitions>
-        <Label x:Name="lblMyLabel" Content="Hallo, iedereen!" HorizontalAlignment="Left" Height="24" Margin="10,10,0,0" VerticalAlignment="Top" Width="103"/>
-        <Button Content="Klik hier!" HorizontalAlignment="Left" Height="23" Margin="10,80,0,0" VerticalAlignment="Top" Width="51" Click="Button_Click_1"/>
-        <TextBox x:Name="txtNaam" HorizontalAlignment="Left" Height="23" Margin="10,39,0,0" TextWrapping="Wrap" Text="Sam" VerticalAlignment="Top" Width="71"/>
+        Title="Hello World" Height="450" Width="800">
+    <Grid Background="#FFFDFDAF" Opacity="0.7" RenderTransformOrigin="1.221,0.443">
+        <Label x:Name="lblNaam" Content="Hallo, hoe is je naam?" HorizontalAlignment="Left" Height="37" Margin="44,49,0,0" VerticalAlignment="Top" Width="169" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="txtNaam" HorizontalAlignment="Left" Height="29" Margin="44,103,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="179" FontSize="14"/>
+        <Button x:Name="btnConfirm" Content="OK" HorizontalAlignment="Left" Height="29" Margin="255,103,0,0" VerticalAlignment="Top" Width="77" FontSize="14" Click="btnConfirm_Click"/>
+        <Button x:Name="btnHerstel" Content="HERSTEL" HorizontalAlignment="Left" Height="29" Margin="357,103,0,0" VerticalAlignment="Top" Width="86" FontSize="14" Click="btnHerstel_Click"/>
+
     </Grid>
 </Window>
