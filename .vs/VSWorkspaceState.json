@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\SlnLes01\\ConsoleHelloWorld"
+    "\\ProjectMaartenVanDorsselaer",
+    "\\SlnLes01\\ConsoleHelloWorld",
+    "\\SlnLes03",
+    "\\SlnLes03\\WpfBMI\\Properties"
   ],
-  "SelectedNode": "\\.gitignore",
+  "SelectedNode": "\\SlnLes03\\SlnLes03.sln",
   "PreviewInSolutionExplorer": false
 }
