@@ -14,23 +14,22 @@ namespace ConsoleKarakter
             Console.Write("Geef een kleine letter: ");
 
             // letter in een string zetten
-            string letter = Console.ReadLine();
+            string letter = Console.ReadLine().ToLower();
 
-            // string in een int steken end it weergeven ---- geeft hier telkens een "exception not handled" bericht
-            double number = Convert.ToInt32(letter);
+            // string in een int steken en dit weergeven ---- geeft hier telkens een "exception not handled" bericht
+            int number = Convert.ToInt32(letter);
             Console.WriteLine("Het nummer is " + number);
 
             // letter omzetten in hoofdletter en dit weergeven
-            // string ucLetter = letter.ToUpper();
             Console.WriteLine("De hoofdletter is " + letter.ToUpper());
 
-            // vorige letter printen
-            double previousNumber = Convert.ToInt32(letter) - 1;
+            // vorige letter printen ---- geeft hier telkens een "exception not handled" bericht
+            int previousNumber = Convert.ToInt32(letter) - 1;
             string vorigeLetter = Convert.ToString(previousNumber);
             Console.WriteLine("De vorige letter is " + vorigeLetter);
 
-            // volgende letter printen
-            double nextNumber = Convert.ToInt32(letter) + 1;
+            // volgende letter printen ---- geeft hier telkens een "exception not handled" bericht
+            int nextNumber = Convert.ToInt32(letter) + 1;
             string volgendeLetter = Convert.ToString(nextNumber);
             Console.WriteLine("De volgende letter is " + volgendeLetter);
 

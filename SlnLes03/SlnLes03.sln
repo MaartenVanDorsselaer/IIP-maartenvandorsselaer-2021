@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleBMI", "ConsoleBMI\Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleKarakter", "ConsoleKarakter\ConsoleKarakter.csproj", "{755C88BA-9883-4F3C-84E3-EA3ABF91C656}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleHms", "ConsoleHms\ConsoleHms.csproj", "{CEEDDADA-7CE9-4969-A483-031F0C4ECF66}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{755C88BA-9883-4F3C-84E3-EA3ABF91C656}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{755C88BA-9883-4F3C-84E3-EA3ABF91C656}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{755C88BA-9883-4F3C-84E3-EA3ABF91C656}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEEDDADA-7CE9-4969-A483-031F0C4ECF66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEEDDADA-7CE9-4969-A483-031F0C4ECF66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEEDDADA-7CE9-4969-A483-031F0C4ECF66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEEDDADA-7CE9-4969-A483-031F0C4ECF66}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

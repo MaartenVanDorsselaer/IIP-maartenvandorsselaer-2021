@@ -32,19 +32,19 @@ namespace WpfBMI
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             // lengte converteren naar een double om ermee te kunnen rekenen
-            double height = Convert.ToDouble(txtHeight.Text) / 100;
+            double height = Math.Pow(Convert.ToDouble(txtHeight.Text) / 100, 2);
 
             // lengte converteren naar een double om ermee te kunnen rekenen
-            double weight = Convert.ToDouble(txtWeight.Text);
+            int weight = Convert.ToInt32(txtWeight.Text);
 
             // kwadraat van de lengte maken
-            double heightSquare = Math.Pow(height, 2);
+            // double heightSquare = Math.Pow(height, 2);
 
             // bmi berekenen
-            double bmi = weight / heightSquare;
+            double bmi = Math.Round(weight / height);
 
             // bmi afronden tot 1 getal na de komma
-            bmi = Math.Round(bmi, 1);
+            //bmi = Math.Round(bmi, 1);
 
             // bmi weergeven
             lblBmi.Content = ("BMI: " + bmi);
