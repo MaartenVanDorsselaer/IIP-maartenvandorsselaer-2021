@@ -21,8 +21,7 @@ namespace ConsoleBMI
             string antwoord1 = Console.ReadLine();
 
             // string omzetten in een double om straks in de berekening te kunnen gebruiken
-            double lengte = Convert.ToDouble(antwoord1);
-            lengte = lengte / 100;
+            double lengte = Convert.ToDouble(antwoord1)/100;
 
             // gewicht opvragen
             Console.Write("Gewicht (in kg): ");
