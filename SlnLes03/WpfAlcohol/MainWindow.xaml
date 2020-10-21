@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfAlcohol.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAlcohol"
+        mc:Ignorable="d"
+        Title="WpfAlcohol" Height="385.553" Width="634.925">
+    <Grid>
+        <Label Content="Alcohol gehalte" HorizontalAlignment="Left" Margin="30,30,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="bold"/>
+        <Image x:Name="imgPint" Source="Images/pint.jpg" HorizontalAlignment="Left" Height="51" Margin="35,70,0,0" VerticalAlignment="Top" Width="35"/>
+        <Image x:Name="imgWijn" Source="Images/wijn.jpg" HorizontalAlignment="Left" Height="58" Margin="35,130,0,0" VerticalAlignment="Top" Width="35"/>
+        <Image x:Name="imgKorteDrank" Source="Images/korteDrank.jpg" HorizontalAlignment="Left" Height="67" Margin="35,180,0,0" VerticalAlignment="Top" Width="35"/>
+        <Slider x:Name="sldAantalPint" HorizontalAlignment="Left" Height="24" Margin="128,100,0,0" VerticalAlignment="Top" Width="300" Maximum="5" IsSnapToTickEnabled="True" ValueChanged="sldAantalPint_ValueChanged"/>
+        <Slider x:Name="sldAantalWijn" HorizontalAlignment="Left" Height="24" Margin="128,145,0,0" VerticalAlignment="Top" Width="300" Maximum="5" IsSnapToTickEnabled="True" ValueChanged="sldAantalWijn_ValueChanged"/>
+        <Slider x:Name="sldAantalKorteDrank" HorizontalAlignment="Left" Height="24" Margin="128,190,0,0" VerticalAlignment="Top" Width="300" Maximum="5" IsSnapToTickEnabled="True" ValueChanged="sldAantalKorteDrank_ValueChanged"/>
+        <Label x:Name="lblAantalPint" Content="" HorizontalAlignment="Left" Height="30" Margin="450,95,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label x:Name="lblAantalWijn" Content="" HorizontalAlignment="Left" Height="30" Margin="450,140,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label x:Name="lblAantalKorteDrank" Content="" HorizontalAlignment="Left" Height="30" Margin="450,185,0,0" VerticalAlignment="Top" Width="115"/>
+        <Label Content="Alcohol gehalte: " HorizontalAlignment="Left" Height="40" Margin="30,250,0,0" VerticalAlignment="Top" Width="130" FontSize="14" FontWeight="Bold"/>
+        <Label x:Name="lblAlcoholGehalte" Content="" HorizontalAlignment="Left" Height="30" Margin="146,253,0,0" VerticalAlignment="Top" Width="300" Background="#FFC34141"/>
+
+    </Grid>
+</Window>
