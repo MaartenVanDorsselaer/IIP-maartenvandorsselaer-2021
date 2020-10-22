@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleHms", "ConsoleHms\Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAlcohol", "WpfAlcohol\WpfAlcohol.csproj", "{4D096723-408B-4359-B586-3A45EB23C342}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfCalculator", "WpfCalculator\WpfCalculator.csproj", "{461271B7-E3E3-4432-80A3-9D1D918C9AA6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{4D096723-408B-4359-B586-3A45EB23C342}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D096723-408B-4359-B586-3A45EB23C342}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D096723-408B-4359-B586-3A45EB23C342}.Release|Any CPU.Build.0 = Release|Any CPU
+		{461271B7-E3E3-4432-80A3-9D1D918C9AA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{461271B7-E3E3-4432-80A3-9D1D918C9AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{461271B7-E3E3-4432-80A3-9D1D918C9AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{461271B7-E3E3-4432-80A3-9D1D918C9AA6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
