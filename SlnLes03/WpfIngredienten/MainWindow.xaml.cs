@@ -54,7 +54,7 @@ namespace WpfIngredienten
         {
             // textberichten omzetten naar getallen zodat we ze kunnen gebruiken in de berekeningen
             // string personen = Convert.ToString(cbbPersonen.SelectedIndex);
-            int persoon = Convert.ToInt32(cbbPersonen.SelectedIndex) + 1;
+            int persoon = Convert.ToInt32(cbbPersonen.Text);
             int hoeveelheid1 = Convert.ToInt32(txtHoeveel1.Text);
             int hoeveelheid2 = Convert.ToInt32(txtHoeveel2.Text);
             int hoeveelheid3 = Convert.ToInt32(txtHoeveel3.Text);
@@ -80,10 +80,10 @@ namespace WpfIngredienten
             string ingredient4 = txtIngredient4.Text;
 
             // boodschappelijst printen
-            lblBoodschappenlijst.Content = "- " + totaal1 + " " + cbbEenheid1.SelectedValue + " " + ingredient1 + Environment.NewLine +
-            "- " + totaal2 + " " + cbbEenheid1.SelectedValue + " " + ingredient2 + Environment.NewLine +
-            "- " + totaal3 + " " + cbbEenheid1.SelectedValue + " " + ingredient3 + Environment.NewLine +
-            "- " + totaal4 + " " + cbbEenheid1.SelectedValue + " " + ingredient4;
+            lblBoodschappenlijst.Content = "- " + totaal1 + " " + cbbEenheid1.Text + " " + ingredient1 + Environment.NewLine +
+            "- " + totaal2 + " " + cbbEenheid2.Text + " " + ingredient2 + Environment.NewLine +
+            "- " + totaal3 + " " + cbbEenheid3.Text + " " + ingredient3 + Environment.NewLine +
+            "- " + totaal4 + " " + cbbEenheid4.Text+ " " + ingredient4;
         }
     }
 }
