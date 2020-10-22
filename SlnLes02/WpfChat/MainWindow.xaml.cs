@@ -26,10 +26,9 @@ namespace WpfChat
         }
         private void btnSend_Click(object sender, RoutedEventArgs e)
         {
-            tbChat.Text = txtName.Text + " says:" + Environment.NewLine + txtMessage.Text + Environment.NewLine + Environment.NewLine;
+            tbChat.Text += txtName.Text + " says:" + Environment.NewLine + txtMessage.Text + Environment.NewLine + Environment.NewLine;
             txtName.Text = "";
             txtMessage.Text = "";
-            //ik vind niet meteen hie ik de berichten kan laten onthouden in de chatbox
         }
     }
 }
