@@ -12,7 +12,7 @@ namespace ConsoleMusicPlayer
         static void Main(string[] args)
         {
             WindowsMediaPlayer player = new WindowsMediaPlayer();
-            player.URL = "C:\Users\maart\Music"
+            player.URL = "C:\\Users\\maart\\Music";
         }
     }
 }
