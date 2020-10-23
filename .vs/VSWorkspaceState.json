@@ -1,10 +1,13 @@
 {
   "ExpandedNodes": [
     "",
+    "\\ProjectMaartenVanDorsselaer",
+    "\\SlnLes01\\WpfPizza",
+    "\\SlnLes01\\WpfPizza\\Images",
     "\\SlnLes04",
     "\\SlnLes04\\SlnLes04",
     "\\SlnLes04\\SlnLes04\\WpfFormChecking"
   ],
-  "SelectedNode": "\\SlnLes04\\SlnLes04\\SlnLes04.sln",
+  "SelectedNode": "\\ProjectMaartenVanDorsselaer\\ProjectMaartenVanDorsselaer.sln",
   "PreviewInSolutionExplorer": false
 }

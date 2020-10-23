@@ -39,15 +39,14 @@ namespace WpfBlackJack
             generateBackground();
         }
 
-
-        // methode om achtergrond in te stellen bij het opstarten van de app
+        // methode om achterkant in te stellen bij het opstarten van de app
         public void generateBackground ()
         {
             // variabelen aanmaken
             int backgroundBank = rnd.Next(1, 6);
             int backgroundPlayer = rnd.Next(1, 6);
 
-            // achtergrond kaarten speler 1 bepalen
+            // achtergrond kaarten bank bepalen
             if (backgroundBank == 1)
             {
                 imgBankCard1.Source = new BitmapImage(new Uri("Images/Background/back_blue.png", UriKind.Relative));
@@ -79,7 +78,7 @@ namespace WpfBlackJack
             imgBankCard3.Source = imgBankCard1.Source;
             imgBankCard2.Source = imgBankCard1.Source;
 
-            // achtergrond kaarten speler 2 bepalen
+            // achtergrond kaarten speler bepalen
             if (backgroundPlayer == 1 && backgroundPlayer != backgroundBank)
             {
                 imgPlayerCard1.Source = new BitmapImage(new Uri("Images/Background/back_blue.png", UriKind.Relative));
@@ -112,7 +111,7 @@ namespace WpfBlackJack
             imgPlayerCard2.Source = imgPlayerCard1.Source;
         }
 
-        // methode om kaart te genereren
+        // methode om voorkant van kaart te genereren
         public void generateCard()
         {
             kaartNr = rnd.Next(1, 52);
@@ -179,7 +178,7 @@ namespace WpfBlackJack
                 case 46: kaart = "Images/Foreground/12H.png"; break;
                 case 47: kaart = "Images/Foreground/12S.png"; break;
                 case 48: kaart = "Images/Foreground/12D.png"; break;
-                // kinh
+                // king
                 case 49: kaart = "Images/Foreground/13C.png"; break;
                 case 50: kaart = "Images/Foreground/13H.png"; break;
                 case 51: kaart = "Images/Foreground/13S.png"; break;
@@ -189,6 +188,7 @@ namespace WpfBlackJack
 
         private void btnHitMe_Click(object sender, RoutedEventArgs e)
         {
+            // 1 kaart van de speler wordt omgedraaid
             generateCard();
             switch (kaartNrPlayer)
             {
@@ -201,6 +201,8 @@ namespace WpfBlackJack
                 default: imgPlayerCard7.Source = new BitmapImage(new Uri(kaart, UriKind.Relative)); break;
             }
             kaartNrPlayer++;
+
+            // score wordt opgeteld
             if (kaartNr <= 4)
             {
                 playerCardValue += 11;
@@ -267,6 +269,7 @@ namespace WpfBlackJack
 
         private void btnHitBank_Click(object sender, RoutedEventArgs e)
         {
+            // kaart voor de bank wordt omgedraaid
             generateCard();
             switch (kaartNrBank)
             {
@@ -280,6 +283,7 @@ namespace WpfBlackJack
             }
             kaartNrBank++;
 
+            // score wordt opgeteld
             if (kaartNr <= 4)
             {
                 bankCardValue += 11;
@@ -346,6 +350,7 @@ namespace WpfBlackJack
 
         private void btnPlayAgain_Click(object sender, RoutedEventArgs e)
         {
+            // kaarten worden omgedraaid, punten worden gewist
             generateBackground();
             lblBankScore.Content = "";
             lblPlayerScore.Content = "";
@@ -356,6 +361,14 @@ namespace WpfBlackJack
                 playerScore++;
             }
             else if (bankCardValue > playerCardValue && bankCardValue <= 21)
+            {
+                bankScore++;
+            }
+            else if (bankCardValue > 21)
+            {
+                playerScore++;
+            }
+            else
             {
                 bankScore++;
             }
@@ -370,7 +383,6 @@ namespace WpfBlackJack
             bankCardValue = 0;
             kaartNrPlayer = 1;
             kaartNrBank = 1;
-
         }
     }
 }
