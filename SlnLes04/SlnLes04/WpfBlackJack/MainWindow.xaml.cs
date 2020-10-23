@@ -200,6 +200,23 @@ namespace WpfBlackJack
                 case 6: imgPlayerCard6.Source = new BitmapImage(new Uri(kaart, UriKind.Relative)); break;
                 default: imgPlayerCard7.Source = new BitmapImage(new Uri(kaart, UriKind.Relative)); break;
             }
+
+            // het was de bedoeling om ervoor te zorgen dat er geen dubbels mogelijk zijn, maar door deze code komen kaart en waarde niet meer overeen??
+            //if (imgPlayerCard1.Source == imgPlayerCard2.Source || imgPlayerCard3.Source == imgPlayerCard2.Source
+            //    || imgPlayerCard3.Source == imgPlayerCard1.Source || imgPlayerCard4.Source == imgPlayerCard3.Source
+            //    || imgPlayerCard4.Source == imgPlayerCard2.Source || imgPlayerCard4.Source == imgPlayerCard1.Source
+            //    || imgPlayerCard5.Source == imgPlayerCard4.Source || imgPlayerCard5.Source == imgPlayerCard3.Source
+            //    || imgPlayerCard5.Source == imgPlayerCard2.Source || imgPlayerCard5.Source == imgPlayerCard1.Source
+            //    || imgPlayerCard6.Source == imgPlayerCard5.Source || imgPlayerCard6.Source == imgPlayerCard4.Source
+            //    || imgPlayerCard6.Source == imgPlayerCard3.Source || imgPlayerCard6.Source == imgPlayerCard2.Source
+            //    || imgPlayerCard6.Source == imgPlayerCard2.Source || imgPlayerCard7.Source == imgPlayerCard6.Source
+            //    || imgPlayerCard7.Source == imgPlayerCard5.Source || imgPlayerCard7.Source == imgPlayerCard4.Source
+            //    || imgPlayerCard7.Source == imgPlayerCard3.Source || imgPlayerCard7.Source == imgPlayerCard2.Source
+            //    || imgPlayerCard7.Source == imgPlayerCard1.Source)
+            //{
+            //    generateCard();
+            //}
+
             kaartNrPlayer++;
 
             // score wordt opgeteld
@@ -281,6 +298,22 @@ namespace WpfBlackJack
                 case 6: imgBankCard6.Source = new BitmapImage(new Uri(kaart, UriKind.Relative)); break;
                 default: imgBankCard7.Source = new BitmapImage(new Uri(kaart, UriKind.Relative)); break;
             }
+
+            // het was de bedoeling om ervoor te zorgen dat er geen dubbels mogelijk zijn, maar door deze code komen kaart en waarde niet meer overeen??
+            //if (imgBankCard1.Source == imgBankCard2.Source || imgBankCard3.Source == imgBankCard2.Source
+            //    || imgBankCard3.Source == imgBankCard1.Source || imgBankCard4.Source == imgBankCard3.Source
+            //    || imgBankCard4.Source == imgBankCard2.Source || imgBankCard4.Source == imgBankCard1.Source
+            //    || imgBankCard5.Source == imgBankCard4.Source || imgBankCard5.Source == imgBankCard3.Source
+            //    || imgBankCard5.Source == imgBankCard2.Source || imgBankCard5.Source == imgBankCard1.Source
+            //    || imgBankCard6.Source == imgBankCard5.Source || imgBankCard6.Source == imgBankCard4.Source
+            //    || imgBankCard6.Source == imgBankCard3.Source || imgBankCard6.Source == imgBankCard2.Source
+            //    || imgBankCard6.Source == imgBankCard2.Source || imgBankCard7.Source == imgBankCard6.Source
+            //    || imgBankCard7.Source == imgBankCard5.Source || imgBankCard7.Source == imgBankCard4.Source
+            //    || imgBankCard7.Source == imgBankCard3.Source || imgBankCard7.Source == imgBankCard2.Source
+            //    || imgBankCard7.Source == imgBankCard1.Source)
+            //{
+            //    generateCard();
+            //}
             kaartNrBank++;
 
             // score wordt opgeteld
