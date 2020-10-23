@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\SlnLes03"
+    "\\SlnLes03\\WpfIngredienten\\Properties",
+    "\\SlnLes04",
+    "\\SlnLes04\\SlnLes04",
+    "\\SlnLes04\\SlnLes04\\WpfFormChecking"
   ],
-  "SelectedNode": "\\SlnLes04",
+  "SelectedNode": "\\SlnLes04\\SlnLes04\\SlnLes04.sln",
   "PreviewInSolutionExplorer": false
 }
