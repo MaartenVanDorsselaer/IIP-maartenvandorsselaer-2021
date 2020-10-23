@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleBestelling", "Consol
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleEindcijfer", "ConsoleEindcijfer\ConsoleEindcijfer.csproj", "{9BFB5840-775F-4293-BED3-FB48E6CF1BE0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfBlackJack", "WpfBlackJack\WpfBlackJack.csproj", "{5884CC85-C94D-4E3C-935B-71F7D853534F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{9BFB5840-775F-4293-BED3-FB48E6CF1BE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BFB5840-775F-4293-BED3-FB48E6CF1BE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BFB5840-775F-4293-BED3-FB48E6CF1BE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5884CC85-C94D-4E3C-935B-71F7D853534F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5884CC85-C94D-4E3C-935B-71F7D853534F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5884CC85-C94D-4E3C-935B-71F7D853534F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5884CC85-C94D-4E3C-935B-71F7D853534F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
