@@ -32,6 +32,7 @@ namespace WpfBlackJack
         int kaartNr;
         int bankScore = 0;
         int playerScore = 0;
+        int cardValue;
 
         public MainWindow()
         {
@@ -115,7 +116,6 @@ namespace WpfBlackJack
         public void generateCard()
         {
             kaartNr = rnd.Next(1, 52);
-
             switch (kaartNr)
             {
                 // ace
@@ -185,7 +185,61 @@ namespace WpfBlackJack
                 case 52: kaart = "Images/Foreground/13D.png"; break;
             }
         }
-
+        public void calculateCardValue()
+        {
+            if (kaartNr <= 4)
+            {
+                cardValue = 11;
+            }
+            else if (kaartNr <= 8)
+            {
+                cardValue = 2;
+            }
+            else if (kaartNr <= 12)
+            {
+                cardValue = 3;
+            }
+            else if (kaartNr <= 16)
+            {
+                cardValue = 4;
+            }
+            else if (kaartNr <= 20)
+            {
+                cardValue = 5;
+            }
+            else if (kaartNr <= 24)
+            {
+                cardValue = 6;
+            }
+            else if (kaartNr <= 28)
+            {
+                cardValue = 7;
+            }
+            else if (kaartNr <= 32)
+            {
+                cardValue = 8;
+            }
+            else if (kaartNr <= 36)
+            {
+                cardValue = 9;
+            }
+            else if (kaartNr <= 40)
+            {
+                cardValue = 10;
+            }
+            else if (kaartNr <= 44)
+            {
+                cardValue = 10;
+            }
+            else if (kaartNr <= 48)
+            {
+                cardValue = 10;
+            }
+            else if (kaartNr <= 52)
+            {
+                cardValue = 10;
+            }
+        }
         private void btnHitMe_Click(object sender, RoutedEventArgs e)
         {
             // 1 kaart van de speler wordt omgedraaid
@@ -220,58 +274,8 @@ namespace WpfBlackJack
             kaartNrPlayer++;
 
             // score wordt opgeteld
-            if (kaartNr <= 4)
-            {
-                playerCardValue += 11;
-            }
-            else if (kaartNr <= 8)
-            {
-                playerCardValue += 2;
-            }
-            else if (kaartNr <= 12)
-            {
-                playerCardValue += 3;
-            }
-            else if (kaartNr <= 16)
-            {
-                playerCardValue += 4;
-            }
-            else if (kaartNr <= 20)
-            {
-                playerCardValue += 5;
-            }
-            else if (kaartNr <= 24)
-            {
-                playerCardValue += 6;
-            }
-            else if (kaartNr <= 28)
-            {
-                playerCardValue += 7;
-            }
-            else if (kaartNr <= 32)
-            {
-                playerCardValue += 8;
-            }
-            else if (kaartNr <= 36)
-            {
-                playerCardValue += 9;
-            }
-            else if (kaartNr <= 40)
-            {
-                playerCardValue += 10;
-            }
-            else if (kaartNr <= 44)
-            {
-                playerCardValue += 10;
-            }
-            else if (kaartNr <= 48)
-            {
-                playerCardValue += 10;
-            }
-            else if (kaartNr <= 52)
-            {
-                playerCardValue += 10;
-            }
+            calculateCardValue();
+            playerCardValue += cardValue;
 
             // score van speler in label invullen
             lblPlayerScore.Content = (playerCardValue);
@@ -283,7 +287,6 @@ namespace WpfBlackJack
                 btnHitMe.IsEnabled = false;
             }
         }
-
         private void btnHitBank_Click(object sender, RoutedEventArgs e)
         {
             // kaart voor de bank wordt omgedraaid
@@ -317,58 +320,8 @@ namespace WpfBlackJack
             kaartNrBank++;
 
             // score wordt opgeteld
-            if (kaartNr <= 4)
-            {
-                bankCardValue += 11;
-            }
-            else if (kaartNr <= 8)
-            {
-                bankCardValue += 2;
-            }
-            else if (kaartNr <= 12)
-            {
-                bankCardValue += 3;
-            }
-            else if (kaartNr <= 16)
-            {
-                bankCardValue += 4;
-            }
-            else if (kaartNr <= 20)
-            {
-                bankCardValue += 5;
-            }
-            else if (kaartNr <= 24)
-            {
-                bankCardValue += 6;
-            }
-            else if (kaartNr <= 28)
-            {
-                bankCardValue += 7;
-            }
-            else if (kaartNr <= 32)
-            {
-                bankCardValue += 8;
-            }
-            else if (kaartNr <= 36)
-            {
-                bankCardValue += 9;
-            }
-            else if (kaartNr <= 40)
-            {
-                bankCardValue += 10;
-            }
-            else if (kaartNr <= 44)
-            {
-                bankCardValue += 10;
-            }
-            else if (kaartNr <= 48)
-            {
-                bankCardValue += 10;
-            }
-            else if (kaartNr <= 52)
-            {
-                bankCardValue += 10;
-            }
+            calculateCardValue();
+            bankCardValue += cardValue;
 
             // score van bank in label invullen
             lblBankScore.Content = (bankCardValue);
@@ -380,7 +333,6 @@ namespace WpfBlackJack
                 btnHitMe.IsEnabled = false;
             }
         }
-
         private void btnPlayAgain_Click(object sender, RoutedEventArgs e)
         {
             // kaarten worden omgedraaid, punten worden gewist
