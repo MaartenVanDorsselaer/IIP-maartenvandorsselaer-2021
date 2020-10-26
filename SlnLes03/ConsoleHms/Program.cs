@@ -15,15 +15,16 @@ namespace ConsoleHms
 
             // lees de seconden in en zet ze om in een getal
             string totaalSeconden = Console.ReadLine();
-            int seconden = Convert.ToInt32(totaalSeconden);
+            int totaal = Convert.ToInt32(totaalSeconden);
 
             // uur, minuten, seconden berekenen
-            int uur = seconden / 60;
-            int minuten = seconden % 60;
-            int rest = seconden % uur % minuten;
+            int uur = totaal / 3600;
+            int rest = totaal % 3600;
+            int minuten = rest / 60;
+            int seconden = rest % 60;
 
             // antwoord weergeven
-            Console.WriteLine("Omgezet in hms formaat: {0} : {1} : {2}", uur, minuten, rest);
+            Console.WriteLine("Omgezet in hms formaat: {0} : {1} : {2}", uur, minuten, seconden);
             Console.ReadLine();
         }
     }
