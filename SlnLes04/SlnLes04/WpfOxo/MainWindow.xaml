@@ -1,0 +1,31 @@
+﻿<Window x:Class="WpfOxo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfOxo"
+        mc:Ignorable="d"
+        Title="OXO" Height="402.513" Width="350">
+    <Grid>
+        <Button x:Name="btnLinksBoven" Content=" " HorizontalAlignment="Left" Margin="30,20,0,0" VerticalAlignment="Top" Height="75" Width="75" 
+                Click="btnLinksBoven_Click" FontSize="24" FontWeight="Bold"/>
+        <Button x:Name="btnMiddenBoven" Content=" " HorizontalAlignment="Left" Margin="130,20,0,0" VerticalAlignment="Top" Height="75" Width="75" 
+                Click="btnLinksBoven_Click" FontSize="24" FontWeight="Bold"/>
+        <Button x:Name="btnRechtsBoven" Content=" " HorizontalAlignment="Left" Margin="230,20,0,0" VerticalAlignment="Top" Height="75" Width="75" 
+                Click="btnLinksBoven_Click" FontSize="24" FontWeight="Bold"/>
+        <Button x:Name="btnLinksMidden" Content=" " HorizontalAlignment="Left" Margin="30,120,0,0" VerticalAlignment="Top" Height="75" Width="75" 
+                Click="btnLinksBoven_Click" FontSize="24" FontWeight="Bold"/>
+        <Button x:Name="btnMidden" Content=" " HorizontalAlignment="Left" Margin="130,120,0,0" VerticalAlignment="Top" Height="75" Width="75" 
+                Click="btnLinksBoven_Click" FontSize="24" FontWeight="Bold"/>
+        <Button x:Name="btnMiddenRechts" Content=" " HorizontalAlignment="Left" Margin="230,120,0,0" VerticalAlignment="Top" Height="75" Width="75" 
+                Click="btnLinksBoven_Click" FontSize="24" FontWeight="Bold"/>
+        <Button x:Name="btnLinksOnder" Content=" " HorizontalAlignment="Left" Margin="30,220,0,0" VerticalAlignment="Top" Height="75" Width="75" 
+                Click="btnLinksBoven_Click" FontSize="24" FontWeight="Bold"/>
+        <Button x:Name="btnMiddenOnder" Content=" " HorizontalAlignment="Left" Margin="130,220,0,0" VerticalAlignment="Top" Height="75" Width="75" 
+                Click="btnLinksBoven_Click" FontSize="24" FontWeight="Bold"/>
+        <Button x:Name="btnRechtsOnder" Content=" " HorizontalAlignment="Left" Margin="230,220,0,0" VerticalAlignment="Top" Height="75" Width="75" 
+                Click="btnLinksBoven_Click" FontSize="24" FontWeight="Bold"/>
+        <Label x:Name="lblWinnaar" Content="" HorizontalAlignment="Left" Margin="29,315,0,0" VerticalAlignment="Top" Width="183" FontSize="16"/>
+
+    </Grid>
+</Window>

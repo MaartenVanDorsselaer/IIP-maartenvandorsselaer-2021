@@ -28,57 +28,59 @@ namespace WpfCalculator
 
         private void btn1_Click(object sender, RoutedEventArgs e)
         {
+            Button btn = (Button)sender;
+            int getal = Convert.ToInt32(btn.Tag);
             // getal 1 invoeren
-            txtNumber.Text += 1;
+            txtNumber.Text += getal;
         }
 
-        private void btn2_Click(object sender, RoutedEventArgs e)
-        {
-            // getal 2 invoeren
-            txtNumber.Text += 2;
+        //private void btn2_Click(object sender, RoutedEventArgs e)
+        //{
+        //    // getal 2 invoeren
+        //    txtNumber.Text += 2;
 
-        }
+        //}
 
-        private void btn3_Click(object sender, RoutedEventArgs e)
-        {
-            // getal 3 invoeren
-            txtNumber.Text += 3;
-        }
+        //private void btn3_Click(object sender, RoutedEventArgs e)
+        //{
+        //    // getal 3 invoeren
+        //    txtNumber.Text += 3;
+        //}
 
-        private void btn4_Click(object sender, RoutedEventArgs e)
-        {
-            // getal 4 invoeren
-            txtNumber.Text += 4;
-        }
+        //private void btn4_Click(object sender, RoutedEventArgs e)
+        //{
+        //    // getal 4 invoeren
+        //    txtNumber.Text += 4;
+        //}
 
-        private void btn5_Click(object sender, RoutedEventArgs e)
-        {   // getal 5 invoeren
-            txtNumber.Text += 5;
-        }
+        //private void btn5_Click(object sender, RoutedEventArgs e)
+        //{   // getal 5 invoeren
+        //    txtNumber.Text += 5;
+        //}
 
-        private void btn6_Click(object sender, RoutedEventArgs e)
-        {
-            // getal 6 invoeren
-            txtNumber.Text += 6;
-        }
+        //private void btn6_Click(object sender, RoutedEventArgs e)
+        //{
+        //    // getal 6 invoeren
+        //    txtNumber.Text += 6;
+        //}
 
-        private void btn7_Click(object sender, RoutedEventArgs e)
-        {
-            // getal 7 invoeren
-            txtNumber.Text += 7;
-        }
+        //private void btn7_Click(object sender, RoutedEventArgs e)
+        //{
+        //    // getal 7 invoeren
+        //    txtNumber.Text += 7;
+        //}
 
-        private void btn8_Click(object sender, RoutedEventArgs e)
-        {
-            // getal 8 invoeren
-            txtNumber.Text += 8;
-        }
+        //private void btn8_Click(object sender, RoutedEventArgs e)
+        //{
+        //    // getal 8 invoeren
+        //    txtNumber.Text += 8;
+        //}
 
-        private void btn9_Click(object sender, RoutedEventArgs e)
-        {
-            // getal 9 invoeeren
-            txtNumber.Text += 9;
-        }
+        //private void btn9_Click(object sender, RoutedEventArgs e)
+        //{
+        //    // getal 9 invoeeren
+        //    txtNumber.Text += 9;
+        //}
 
         private void btnDot_Click(object sender, RoutedEventArgs e)
         {
@@ -86,16 +88,17 @@ namespace WpfCalculator
             txtNumber.Text += ",";
         }
 
-        private void btn0_Click(object sender, RoutedEventArgs e)
-        {
-            // getal 0 invoeren
-            txtNumber.Text += 0;
-        }
+        //private void btn0_Click(object sender, RoutedEventArgs e)
+        //{
+        //    // getal 0 invoeren
+        //    txtNumber.Text += 0;
+        //}
 
         private void btnErase_Click(object sender, RoutedEventArgs e)
         {
             // tekstbox leegmaken
             txtNumber.Text += "";
+            lblUitkomst.Content = "0,0";
         }
 
         private void btnRnd_Click(object sender, RoutedEventArgs e)

@@ -1,0 +1,13 @@
+﻿<Window x:Class="WpfDatumKiezer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfDatumKiezer"
+        mc:Ignorable="d"
+        Title="Date Picker" Height="157.161" Width="259.548">
+    <Grid>
+        <DatePicker x:Name="dpDate" HorizontalAlignment="Left" Margin="21,30,0,0" VerticalAlignment="Top" Width="157" SelectedDateChanged="dpDate_SelectedDateChanged"/>
+        <Label x:Name="lblDate" Content="" HorizontalAlignment="Left" Margin="21,82,0,0" VerticalAlignment="Top" Width="207"/>
+    </Grid>
+</Window>
