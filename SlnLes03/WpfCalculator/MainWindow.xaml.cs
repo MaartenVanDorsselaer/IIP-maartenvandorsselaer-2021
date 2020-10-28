@@ -21,9 +21,12 @@ namespace WpfCalculator
     public partial class MainWindow : Window
     {
         Random rnd = new Random();
+        double number = Convert.ToDouble(txtNumber.Text);
+        double total = Convert.ToDouble(lblUitkomst.Content);
         public MainWindow()
         {
             InitializeComponent();
+
         }
 
         private void btn1_Click(object sender, RoutedEventArgs e)
@@ -110,8 +113,8 @@ namespace WpfCalculator
         private void btnPlus_Click(object sender, RoutedEventArgs e)
         {
             // optelling
-            double number = Convert.ToDouble(txtNumber.Text);
-            double total = Convert.ToDouble(lblUitkomst.Content);
+            // double number = Convert.ToDouble(txtNumber.Text);
+            // double total = Convert.ToDouble(lblUitkomst.Content);
             total += number;
             lblUitkomst.Content = ("" + total);
             txtNumber.Text = "";
@@ -120,8 +123,8 @@ namespace WpfCalculator
         private void btnMin_Click(object sender, RoutedEventArgs e)
         {
             // aftrekking
-            double number = Convert.ToDouble(txtNumber.Text);
-            double total = Convert.ToDouble(lblUitkomst.Content);
+            //double number = Convert.ToDouble(txtNumber.Text);
+            //double total = Convert.ToDouble(lblUitkomst.Content);
             total -= number;
             lblUitkomst.Content = ("" + total);
             txtNumber.Text = "";
@@ -130,8 +133,8 @@ namespace WpfCalculator
         private void btnMult_Click(object sender, RoutedEventArgs e)
         {
             // vermenigvuldiging
-            double number = Convert.ToDouble(txtNumber.Text);
-            double total = Convert.ToDouble(lblUitkomst.Content);
+            // double number = Convert.ToDouble(txtNumber.Text);
+            // double total = Convert.ToDouble(lblUitkomst.Content);
             total *= number;
             lblUitkomst.Content = ("" + total);
             txtNumber.Text = "";
@@ -140,8 +143,8 @@ namespace WpfCalculator
         private void btnDiv_Click(object sender, RoutedEventArgs e)
         {
             // deling
-            double number = Convert.ToDouble(txtNumber.Text);
-            double total = Convert.ToDouble(lblUitkomst.Content);
+            // double number = Convert.ToDouble(txtNumber.Text);
+            // double total = Convert.ToDouble(lblUitkomst.Content);
             total /= number;
             lblUitkomst.Content = ("" + total);
             txtNumber.Text = "";
@@ -150,8 +153,8 @@ namespace WpfCalculator
         private void btnSqr_Click(object sender, RoutedEventArgs e)
         {
             // macht 
-            double number = Convert.ToDouble(txtNumber.Text);
-            double total = Convert.ToDouble(lblUitkomst.Content);
+            // double number = Convert.ToDouble(txtNumber.Text);
+            // double total = Convert.ToDouble(lblUitkomst.Content);
             total = Math.Pow(total, number);
             lblUitkomst.Content = ("" + total);
             txtNumber.Text = "";
@@ -160,8 +163,8 @@ namespace WpfCalculator
         private void btnSqrt_Click(object sender, RoutedEventArgs e)
         {
             // vierkantswortel
-            double number = Convert.ToDouble(txtNumber.Text);
-            double total = Convert.ToDouble(lblUitkomst.Content);
+            // double number = Convert.ToDouble(txtNumber.Text);
+            // double total = Convert.ToDouble(lblUitkomst.Content);
             total = Math.Sqrt(number);
             lblUitkomst.Content = ("" + total);
             txtNumber.Text = "";
