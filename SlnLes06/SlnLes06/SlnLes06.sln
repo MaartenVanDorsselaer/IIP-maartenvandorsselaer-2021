@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleGGD", "ConsoleGGD\Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleBankautomaat", "ConsoleBankautomaat\ConsoleBankautomaat.csproj", "{BE26AFE9-5F36-4C59-8CEF-875BDCFC5A79}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfBoodschappenlijst", "WpfBoodschappenlijst\WpfBoodschappenlijst.csproj", "{A01F1E0B-A5CB-4166-BD76-8D4215A9F195}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfPriemgetal", "WpfPriemgetal\WpfPriemgetal.csproj", "{D99D7B95-E62A-434C-AA10-FCFB896DE5DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{BE26AFE9-5F36-4C59-8CEF-875BDCFC5A79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE26AFE9-5F36-4C59-8CEF-875BDCFC5A79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE26AFE9-5F36-4C59-8CEF-875BDCFC5A79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A01F1E0B-A5CB-4166-BD76-8D4215A9F195}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A01F1E0B-A5CB-4166-BD76-8D4215A9F195}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A01F1E0B-A5CB-4166-BD76-8D4215A9F195}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A01F1E0B-A5CB-4166-BD76-8D4215A9F195}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D99D7B95-E62A-434C-AA10-FCFB896DE5DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D99D7B95-E62A-434C-AA10-FCFB896DE5DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D99D7B95-E62A-434C-AA10-FCFB896DE5DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D99D7B95-E62A-434C-AA10-FCFB896DE5DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
