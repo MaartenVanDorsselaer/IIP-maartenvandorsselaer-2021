@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfBoodschappenlijst", "Wpf
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfPriemgetal", "WpfPriemgetal\WpfPriemgetal.csproj", "{D99D7B95-E62A-434C-AA10-FCFB896DE5DA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleKlinkers", "ConsoleKlinkers\ConsoleKlinkers.csproj", "{BC1AF90A-B80C-4263-905B-4D190CF49CA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleOnderBoven", "ConsoleOnderBoven\ConsoleOnderBoven.csproj", "{A2429E7D-A9BB-43AB-92C2-02E348248B6B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{D99D7B95-E62A-434C-AA10-FCFB896DE5DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D99D7B95-E62A-434C-AA10-FCFB896DE5DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D99D7B95-E62A-434C-AA10-FCFB896DE5DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC1AF90A-B80C-4263-905B-4D190CF49CA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC1AF90A-B80C-4263-905B-4D190CF49CA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC1AF90A-B80C-4263-905B-4D190CF49CA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC1AF90A-B80C-4263-905B-4D190CF49CA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2429E7D-A9BB-43AB-92C2-02E348248B6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2429E7D-A9BB-43AB-92C2-02E348248B6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2429E7D-A9BB-43AB-92C2-02E348248B6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2429E7D-A9BB-43AB-92C2-02E348248B6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
