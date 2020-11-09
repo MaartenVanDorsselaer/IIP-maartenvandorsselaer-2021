@@ -5,10 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfEllipsen"
         mc:Ignorable="d"
-        Title="WpfEllipsen" Height="450" Width="800">
-    <Grid>
-        <Canvas x:Name="canvas1" HorizontalAlignment="Left" Height="255" Margin="10,94,0,-78.6" VerticalAlignment="Top" Width="711"/>
-        <Button x:Name="btnTekenen" Content="TEKENEN" HorizontalAlignment="Left" Margin="541,46,0,0" VerticalAlignment="Top"
+        Title="WpfEllipsen" Height="454.205" Width="812.616">
+    <Grid x:Name="lblMinRadius1">
+        <Canvas x:Name="canvas1" HorizontalAlignment="Left" Height="255" Margin="10,150,0,-78.6" VerticalAlignment="Top" Width="711"/>
+        <Button x:Name="btnTekenen" Content="TEKENEN" HorizontalAlignment="Left" Margin="600,46,0,0" VerticalAlignment="Top"
 Width="138" Height="30" FontWeight="Bold" Click="btnTekenen_Click"/>
+        <Slider x:Name="sldAantalCirkel" HorizontalAlignment="Left" Height="30" Margin="200,35,0,0" VerticalAlignment="Top" Width="275" Maximum="50" IsSnapToTickEnabled="True" ValueChanged="sldAantalCirkel_ValueChanged"/>
+        <Slider x:Name="sldMinRadius" HorizontalAlignment="Left" Height="30" Margin="200,70,0,0" VerticalAlignment="Top" Width="275" Maximum="50" Minimum="1" IsSnapToTickEnabled="True" ValueChanged="sldMinRadius_ValueChanged" />
+        <Slider x:Name="sldMaxRadius" HorizontalAlignment="Left" Height="30" Margin="200,105,0,0" VerticalAlignment="Top" Width="275" IsSnapToTickEnabled="True" Maximum="100" Minimum="50" ValueChanged="sldMaxRadius_ValueChanged"/>
+        <Label x:Name="lblAantalCirkels" Content="" HorizontalAlignment="Left" Margin="500,35,0,0" VerticalAlignment="Top" Width="44"/>
+        <Label x:Name="lblMinRadius" Content="" HorizontalAlignment="Left" Margin="500,70,0,0" VerticalAlignment="Top" Width="44"/>
+        <Label x:Name="lblMaxRad" Content="" HorizontalAlignment="Left" Margin="500,105,0,0" VerticalAlignment="Top" Width="44"/>
+        <Label Content="Aantal Cirkels" HorizontalAlignment="Left" Margin="15,35,0,0" VerticalAlignment="Top" Width="160" FontSize="14"/>
+        <Label Content="Minimum Radius" HorizontalAlignment="Left" Margin="15,70,0,0" VerticalAlignment="Top" Width="160" FontSize="14"/>
+        <Label Content="Maximum Radius" HorizontalAlignment="Left" Margin="15,105,0,0" VerticalAlignment="Top" Width="160" FontSize="14"/>
     </Grid>
 </Window>
