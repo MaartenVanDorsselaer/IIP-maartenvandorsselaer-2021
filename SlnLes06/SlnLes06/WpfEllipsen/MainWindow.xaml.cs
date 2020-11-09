@@ -22,14 +22,22 @@ namespace WpfEllipsen
     {
         public MainWindow()
         {
-            InitializeComponent()
+            InitializeComponent();
+            // random generator aanmaken voor kleur
+            Random rnd = new Random();
         }
 
         private void btnTekenen_Click(object sender, RoutedEventArgs e)
         {
-            const int AANTAL_ELLIPSEN = 50;
-            const int MIN_RADIUS = 5;
-            const int MAX_RADIUS = 100;
+            // variabelen aanmaken + invullen
+            int cirkels = Convert.ToInt32(sldAantalCirkel.Value);
+            int minRadius = Convert.ToInt32(sldMinRadius.Value);
+            int maxRadius = Convert.ToInt32(sldMaxRadius.Value);
+
+            for (int i = 1; i<= cirkels; i++)
+            {
+
+            }
 
             // maak de ellips
             Ellipse newEllipse = new Ellipse();
@@ -42,6 +50,21 @@ namespace WpfEllipsen
             newEllipse.SetValue(Canvas.TopProperty, yPos);
             //voeg ellips toe aan het canvas
             canvas1.Children.Add(newEllipse);
+        }
+
+        private void sldAantalCirkel_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            lblAantalCirkels.Content = sldAantalCirkel.Value;
+        }
+
+        private void sldMinRadius_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            lblMinRadius.Content = sldMinRadius.Value;
+        }
+
+        private void sldMaxRadius_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            lblMaxRad.Content = sldMaxRadius.Value;
         }
     }
 }
