@@ -24,7 +24,7 @@ namespace WpfEllipsen
         {
             InitializeComponent();
             // random generator aanmaken voor kleur
-            Random rnd = new Random();
+            
         }
 
         private void btnTekenen_Click(object sender, RoutedEventArgs e)
@@ -33,23 +33,36 @@ namespace WpfEllipsen
             int cirkels = Convert.ToInt32(sldAantalCirkel.Value);
             int minRadius = Convert.ToInt32(sldMinRadius.Value);
             int maxRadius = Convert.ToInt32(sldMaxRadius.Value);
-
-            for (int i = 1; i<= cirkels; i++)
+            Random rnd = new Random(); 
+            
+            if (sldMaxRadius.Value < sldMinRadius.Value)
             {
-
+                lblError.Content = "De minimum mag niet groter zijn dan de maximum straal!";
+                lblError.Foreground = Brushes.Red;
             }
+            else
+            {
+                lblError.Content = "";
+                lblError.Foreground = Brushes.Black;
 
-            // maak de ellips
-            Ellipse newEllipse = new Ellipse();
-            newEllipse.Width = 150;
-            newEllipse.Height = 60;
-            newEllipse.Fill = new SolidColorBrush(Color.FromRgb(122, 78, 200));
-            double xPos = 50;
-            double yPos = 85;
-            newEllipse.SetValue(Canvas.LeftProperty, xPos);
-            newEllipse.SetValue(Canvas.TopProperty, yPos);
-            //voeg ellips toe aan het canvas
-            canvas1.Children.Add(newEllipse);
+                for (int i = 1; i <= cirkels; i++)
+                {
+                    byte r = Convert.ToByte(rnd.Next(0, 255));
+                    byte g = Convert.ToByte(rnd.Next(0, 255));
+                    byte b = Convert.ToByte(rnd.Next(0, 255));
+                    // maak de ellips
+                    Ellipse newEllipse = new Ellipse();
+                    newEllipse.Width = Convert.ToInt32(rnd.Next(minRadius, maxRadius));
+                    newEllipse.Height = Convert.ToInt32(rnd.Next(minRadius, maxRadius));
+                    newEllipse.Fill = new SolidColorBrush(Color.FromRgb(r, g, b ));
+                    double xPos = Convert.ToInt32(rnd.Next(0, 255));
+                    double yPos = Convert.ToInt32(rnd.Next(0, 700));
+                    newEllipse.SetValue(Canvas.LeftProperty, xPos);
+                    newEllipse.SetValue(Canvas.TopProperty, yPos);
+                    //voeg ellips toe aan het canvas
+                    canvas1.Children.Add(newEllipse);
+                }
+            }
         }
 
         private void sldAantalCirkel_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
