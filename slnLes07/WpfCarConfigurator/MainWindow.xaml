@@ -1,0 +1,31 @@
+﻿<Window x:Class="WpfCarConfigurator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfCarConfigurator"
+        mc:Ignorable="d"
+        Title="Car Configurator" Height="450" Width="800">
+    <Grid>
+        <Label Content="MODEL" HorizontalAlignment="Left" Margin="50,50,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <Label Content="KLEUR" HorizontalAlignment="Left" Margin="50,100,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <Label Content="ACCESSOIRES" HorizontalAlignment="Left" Margin="50,200,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <Label Content="PRIJS" HorizontalAlignment="Left" Margin="50,350,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <Label x:Name="lblPrijs" Content="" HorizontalAlignment="Left" Margin="300,350,0,0" VerticalAlignment="Top" FontSize="16" Width="188"/>
+        <ComboBox x:Name="cbbModel" HorizontalAlignment="Left" Margin="235,60,0,0" VerticalAlignment="Top" Width="160" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem Content="Continental V8 (85000 euro)" HorizontalAlignment="Left" Width="160"/>
+            <ComboBoxItem Content="Convertible (72000 euro)" HorizontalAlignment="Left" Width="160"/>
+            <ComboBoxItem Content="Mulsanne (65300 euro)" HorizontalAlignment="Left" Width="160"/>
+        </ComboBox>
+        <RadioButton x:Name="rbBlauw" Content="Blauw" Tag="blauw" HorizontalAlignment="Left" Margin="235,100,0,0" VerticalAlignment="Top" GroupName="kleur" Checked="rbBlauw_Checked"/>
+        <RadioButton x:Name="rbGroen" Content="Groen (+250 euro)" Tag="groen" HorizontalAlignment="Left" Margin="235,120,0,0" VerticalAlignment="Top" GroupName="kleur" Checked="rbBlauw_Checked"/>
+        <RadioButton x:Name="rbRood" Content="Rood (+700 euro)" Tag="rood" HorizontalAlignment="Left" Margin="235,140,0,0" VerticalAlignment="Top" GroupName="kleur" Checked="rbBlauw_Checked"/>
+        <CheckBox x:Name="chbSpeakers" Content="Bose audio speakers (+1250 euro)" Tag="speakers" HorizontalAlignment="Left" Margin="235,200,0,0" VerticalAlignment="Top" Checked="chbSpeakers_Checked" Unchecked="chbSpeakers_Unchecked"/>
+        <CheckBox x:Name="chbMatjes" Content="Deluxe matjes (+450 euro)" Tag="matjes" HorizontalAlignment="Left" Margin="235,220,0,0" VerticalAlignment="Top" Checked="chbSpeakers_Checked" Unchecked="chbSpeakers_Unchecked"/>
+        <CheckBox x:Name="chbVelgen" Content="Aluminium velgen (+300 euro)" Tag="velgen" HorizontalAlignment="Left" Margin="235,240,0,0" VerticalAlignment="Top" Checked="chbSpeakers_Checked" Unchecked="chbSpeakers_Unchecked"/>
+        <Image x:Name="imgAuto" HorizontalAlignment="Left" Height="122" Margin="508,59,0,0" VerticalAlignment="Top" Width="217"/>
+        <Image x:Name="imgSpeakers" HorizontalAlignment="Left" Source="Images/opties_audio.jpg" Height="63" Margin="350,280,0,0" VerticalAlignment="Top" Width="118"/>
+        <Image x:Name="imgMatjes" HorizontalAlignment="Left" Source="Images/opties_matjes.jpg" Height="63" Margin="500,280,0,0" VerticalAlignment="Top" Width="118"/>
+        <Image x:Name="imgVelgen" HorizontalAlignment="Left" Source="Images/opties_velgen.jpg" Height="63" Margin="650,280,0,0" VerticalAlignment="Top" Width="118"/>
+    </Grid>
+</Window>
