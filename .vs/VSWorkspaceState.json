@@ -1,7 +1,14 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ProjectMaartenVanDorsselaer",
+    "\\ProjectMaartenVanDorsselaer\\ConsoleMusicPlayer",
+    "\\ProjectMaartenVanDorsselaer\\WpfMusicPlayer",
+    "\\SlnLes01",
+    "\\SlnLes01\\WpfChat",
+    "\\SlnLes05\\SlnLes05",
+    "\\SlnLes06\\SlnLes06"
   ],
-  "SelectedNode": "\\ProjectMaartenVanDorsselaer.sln",
+  "SelectedNode": "\\ProjectMaartenVanDorsselaer\\ProjectMaartenVanDorsselaer.sln",
   "PreviewInSolutionExplorer": false
 }

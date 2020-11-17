@@ -279,7 +279,6 @@ Jouw keuze: ");
         {
             string musicFolder = Environment.GetFolderPath(Environment.SpecialFolder.MyMusic);
             player.URL = System.IO.Path.Combine(musicFolder, bestandslocatie);
-
             player.controls.play();
         }
         // liedje pauzeren
