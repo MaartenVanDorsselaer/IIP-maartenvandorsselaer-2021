@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsolePaswoordenSorteren",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleScores", "ConsoleScores\ConsoleScores.csproj", "{A8B6622B-1268-4C1D-B329-5241EF0AB0C9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfKwistet", "WpfKwistet\WpfKwistet.csproj", "{126A0547-4424-4A20-86FF-A09ADAFF1F1C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{A8B6622B-1268-4C1D-B329-5241EF0AB0C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8B6622B-1268-4C1D-B329-5241EF0AB0C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8B6622B-1268-4C1D-B329-5241EF0AB0C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{126A0547-4424-4A20-86FF-A09ADAFF1F1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{126A0547-4424-4A20-86FF-A09ADAFF1F1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{126A0547-4424-4A20-86FF-A09ADAFF1F1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{126A0547-4424-4A20-86FF-A09ADAFF1F1C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
